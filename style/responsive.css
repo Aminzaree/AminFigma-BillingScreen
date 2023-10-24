@@ -1,0 +1,102 @@
+@media screen and (max-width: 992px){
+
+    #figma #menu{
+        text-align: center;
+    }
+
+    #figma #menu .navbar nav ul li a{
+        justify-content: center;
+    }
+
+    #figma #menu #help{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    #figma #main .section1 .salary{
+        margin-top: 20px;
+    }
+
+    #figma #main .section1 .payment{
+        margin-top: 20px;
+    }
+
+    #figma #main .section1 #inputs{
+        margin-top: 40px;
+    }
+
+    #figma #main .section1 .creditCard{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    /* #figma #main .section1 .creditCard img{
+        width: 80%;
+    } */
+}
+
+@media screen and (max-width: 768px){
+
+    #figma #header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #figma #header .pages{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #figma #header .set{
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    #figma #main .section1 .creditCard{
+        width: 50%;
+    }
+    
+    /* #figma #main .section1 .creditCard img{
+        width: 100%;
+    } */
+
+    #figma #menu #help{
+        width: 30%;
+        margin: 0 auto;
+    }
+    
+
+}
+
+@media screen and (max-width: 576px){
+    #figma #main .section1 .salary{
+        margin-top: 20px;
+    }
+
+    #figma #main .section1 .payment{
+        margin-top: 20px;
+    }
+
+    #figma #main .section1 #inputs{
+        margin-top: 20px;
+    }
+
+    #figma #main .section1 #inputs #inputBox .inputBox input{
+        width: 100%;
+    }
+
+    #figma #menu #help{
+        width: 50%;
+    }
+
+    #figma #main .section1 .creditCard{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #figma #menu #help{
+        width: 70%;
+    }
+}

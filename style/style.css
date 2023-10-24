@@ -1,0 +1,1004 @@
+body{
+    direction: ltr;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(248, 249, 250, 1);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* To Top Button */
+
+#figma #toTop{
+    position: fixed;
+    bottom: -30px;
+    right: 300px;
+    z-index: 3000;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(45, 55, 72, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+#figma #toTop.active{
+    opacity: 1;
+    bottom: 60px;
+    right: 30px;
+}
+
+#figma #toTop svg{
+    color: rgba(79, 209, 197, 1);
+    font-size: 27px;
+}
+
+
+/* Nav */
+
+#figma #menu{
+    margin-top: 24px;
+
+}
+
+#figma #menu .logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(113, 128, 150, 0.5);
+}
+
+#figma #menu .logo h1{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+    margin-left: 10px;
+}
+
+#figma #menu .navbar{
+    width: 100%;
+    padding: 0 15px;
+    padding-top: 10px;
+}
+
+#figma #menu .navbar nav{
+    width: 100%;
+}
+
+#figma #menu .navbar nav ul{
+    width: 100%;
+}
+
+#figma #menu .navbar nav ul li{
+    list-style: none;
+    margin: 5px 0;
+    
+}
+
+.li-active{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#figma #menu .navbar nav ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+    padding: 9px 9px;
+}
+
+#figma #menu .navbar nav ul li a svg{
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(79, 209, 197, 1);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+#figma #menu .navbar nav ul h3{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+    padding: 10px 9px;
+}
+
+#figma #menu #help{
+    width: 100%;
+    margin-top: 25px;
+}
+
+#figma #menu .help{
+    width: 100%;
+    background: rgba(79, 209, 197, 1);
+    background-image: url(../img/Ellipse\ 7.png), url(../img/Ellipse\ 6.png), url(../img/Ellipse\ 5.png), url(../img/Ellipse\ 4.png), url(../img/Ellipse\ 3.png), url(../img/Ellipse\ 2.png), url(../img/Ellipse\ 1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#figma #menu .help a{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+#figma #menu .help a svg{
+    color: #fff;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    font-size: 13px;
+    background: rgba(79, 209, 197, 1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#figma #menu .help h2{
+    text-align: start;
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 0 3px 0;
+}
+
+#figma #menu .help p{
+    text-align: start;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 10px;
+}
+
+#figma #menu .help button{
+    width: 100%;
+    height: 36px;
+    border: none;
+    border-radius: 12px;
+    padding:  8px;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+    background: rgba(255, 255, 255, 1);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#figma #menu .help button:hover{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(45, 55, 72, 1);
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+
+
+/* #figma #menu .help img{
+    width: 100%;
+} */
+
+#figma #header{
+    width: 100%;
+    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#figma #header h3 span{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: rgba(160, 174, 192, 1 );
+}
+
+#figma #header h3{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba(45, 55, 72, 1);
+}
+
+#figma #header .set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#figma #header .set .input-set{
+    position: relative;
+}
+
+#figma #header .set input{
+    position: relative;
+    width: 199px;
+    height: 39.5px;
+    padding: 0 30px;
+    outline: none;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 1);
+    border: 0.5px solid rgba(226, 232, 240, 1);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#figma #header .set .input-set svg{
+    font-size: 14px;
+    position: absolute;
+    z-index: 1;
+    bottom: 12px;
+    left: 10px;
+    color: rgba(45, 55, 72, 1);
+}
+
+#figma #header .set a{
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    color: rgba(113, 128, 150, 1);
+    text-decoration: none;
+}
+
+#figma #header .set a:hover{
+    color: rgb(85, 95, 111);
+}
+
+#figma #header .set a:nth-child(2) svg{
+    margin-right: 7px;
+}
+
+#figma #main .section1{
+    margin-top: 23px;
+}
+
+/* #figma #main .section1 .creditCard{
+    width: 100%;
+    text-align: center;
+}
+
+#figma #main .section1 .creditCard img{
+    width: 100%;
+} */
+
+#figma #main .section1 .salary{
+    width: 100%;
+    padding: 22px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3.499999761581421px 5.5px 0px rgba(0, 0, 0, 0.02);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#figma #main .section1 .salary a{
+    width: 40px;
+    height: 40px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(79, 209, 197, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+#figma #main .section1 .salary h2{
+    font-size: 18px;
+    line-height: 25.2px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+    padding-top: 5px;
+}
+
+#figma #main .section1 .salary p{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    color: rgba(160, 174, 192, 1);
+    border-bottom: 2px solid rgba(113, 128, 150, 0.5);
+    padding: 5px 0;
+}
+
+#figma #main .section1 .salary h3{
+    font-size: 18px;
+    line-height: 25.2px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+    padding-top: 5px;
+}
+
+
+#figma #main .section1 .payment{
+    width: 100%;
+    padding: 22px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3.499999761581421px 5.5px 0px rgba(0, 0, 0, 0.02);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#figma #main .section1 .payment a{
+    width: 40px;
+    height: 40px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(79, 209, 197, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+#figma #main .section1 .payment h2{
+    font-size: 18px;
+    line-height: 25.2px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+    padding-top: 5px;
+}
+
+#figma #main .section1 .payment p{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    color: rgba(160, 174, 192, 1);
+    padding: 5px 0;
+    border-bottom: 2px solid rgba(113, 128, 150, 0.5);
+}
+
+#figma #main .section1 .payment h3{
+    font-size: 18px;
+    line-height: 25.2px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+    padding-top: 5px;
+}
+
+#figma #main .section1 #inputs{
+    margin-top: 20px;
+    padding: 28px 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3.499999761581421px 5.5px 0px rgba(0, 0, 0, 0.02);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#figma #main .section1 #inputs .input-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#figma #main .section1 #inputs .input-title h2{
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+}
+
+#figma #main .section1 #inputs .input-title button{
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    padding: 9px 20px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(81.62deg, #313860 2.25%, #151928 79.87%);
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#figma #main .section1 #inputs .input-title button:hover{
+    background: linear-gradient(81.62deg, #4b5489 2.25%, #252c45 79.87%);
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+#figma #main .section1 #inputs #inputBox{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#figma #main .section1 #inputs #inputBox .inputBox{
+    width: 100%;
+    position: relative;
+}
+
+#figma #main .section1 #inputs #inputBox .inputBox input{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    height: 45px;
+    padding: 0 35px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(226, 232, 240, 1);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.input-pencel{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.input-pencel:hover{
+    color: rgba(113, 128, 150, 0.5);
+}
+
+.fa-cc-mastercard{
+    position: absolute;
+    color: #ff4d00;
+    bottom: 14px;
+    left: 10px;
+    z-index: 1;
+}
+
+.fa-cc-visa{
+    position: absolute;
+    bottom: 14px;
+    left: 10px;
+    z-index: 1;
+    color: rgba(67, 24, 255, 1);
+}
+
+#figma #main .section2 .invoces{
+    padding: 20px 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3.499999761581421px 5.5px 0px rgba(0, 0, 0, 0.02);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-top: 23px;
+}
+
+#figma #main .section2 .invoces .invoces-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#figma #main .section2 .invoces .invoces-title h2{
+    font-size: 18px;
+    line-height: 25.2px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+}
+
+#figma #main .section2 .invoces .invoces-title button{
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    color: rgba(79, 209, 197, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(79, 209, 197, 1);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#figma #main .section2 .invoces .invoces-title button:hover{
+    background-color: rgba(79, 209, 197, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(79, 209, 197, 1);
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+#figma #main .section2 .invoces .invoicesBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#figma #main .section2 .invoces .invoicesBox .invoices-content h3{
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+}
+
+#figma #main .section2 .invoces .invoicesBox .invoices-content p{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    color: rgba(160, 174, 192, 1);
+}
+
+#figma #main .section2 .invoces .invoicesBox .invocies-details{
+    display: flex;
+    align-items: center;
+}
+
+#figma #main .section2 .invoces .invoicesBox .invocies-details p{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    color: rgba(160, 174, 192, 1);
+    margin-right: 20px;
+}
+
+#figma #main .section2 .invoces .invoicesBox .invocies-details a{
+    text-decoration: none;
+    color: rgba(45, 55, 72, 1);
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+}
+
+#figma #main .section2 .invoces .invoicesBox .invocies-details svg{
+    margin-right: 5px;
+}
+
+#figma #main .section3 .billing{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3.499999761581421px 5.5px 0px rgba(0, 0, 0, 0.02);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#figma #main .section3 .billing h2{
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 25.2px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+}
+
+#figma #main .section3 .billing .billingBox{
+    padding: 15px 10px;
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(248, 249, 250, 1);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+#figma #main .section3 .billing .billingBox h2{
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 700;
+    color: rgba(113, 128, 150, 1);
+}
+
+#figma #main .section3 .billing .billingBox p{
+    color: rgba(160, 174, 192, 1);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+#figma #main .section3 .billing .billingBox p span{
+    color: rgba(45, 55, 72, 1);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+#figma #main .section3 .billing .billingBox .billing-edit a:nth-child(1){
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+    color: red;
+    margin-right: 15px;
+}
+
+#figma #main .section3 .billing .billingBox .billing-edit a:hover:nth-child(1){
+    color: rgb(255, 51, 0);
+}
+
+#figma #main .section3 .billing .billingBox .billing-edit a:nth-child(1) svg{
+    margin-right: 5px;
+}
+
+#figma #main .section3 .billing .billingBox .billing-edit a:nth-child(2){
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+    color: rgb(91, 104, 125);
+}
+
+#figma #main .section3 .billing .billingBox .billing-edit a:hover:nth-child(2){
+    color: rgb(37, 44, 57);
+}
+
+#figma #main .section3 .billing .billingBox .billing-edit a:nth-child(2) svg{
+    margin-right: 5px;
+}
+
+#figma #main .section4 .transactions{
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3.499999761581421px 5.5px 0px rgba(0, 0, 0, 0.02);
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#figma #main .section4 .transactions .transactions-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#figma #main .section4 .transactions .transactions-title h2{
+    font-size: 18px;
+    line-height: 25.2px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+}
+
+#figma #main .section4 .transactions .transactions-title .transactions-date{
+    display: flex;
+    align-items: center;
+}
+
+#figma #main .section4 .transactions .transactions-title svg{
+    font-size: 14px;
+    margin-right: 10px;
+    color: rgba(45, 55, 72, 1);
+}
+
+#figma #main .section4 .transactions .transactions-title p{
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 700;
+    color: rgba(160, 174, 192, 1);
+}
+
+
+#figma #main .section4 .transactions h3{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    color: rgba(160, 174, 192, 1);
+    padding: 15px 0;
+}
+
+#figma #main .section4 .transactions .TransactionBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+#figma #main .section4 .transactions .Transactions-Content{
+    display: flex;
+}
+
+#figma #main .section4 .transactions .Transactions-Content .fa-arrow-down{
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+    color: rgba(229, 62, 62, 1);
+    border: 1px solid rgba(229, 62, 62, 1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+}
+
+#figma #main .section4 .transactions .Transactions-Content  .fa-arrow-up{
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+    color: rgba(72, 187, 120, 1);
+    border: 1px solid rgba(72, 187, 120, 1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+}
+
+#figma #main .section4 .transactions .TransactionBox h2{
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1);
+}
+
+#figma #main .section4 .transactions .TransactionBox .Transaction-Details p{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    color: rgba(160, 174, 192, 1);
+}
+
+#figma #main .section4 .transactions .TransactionBox p{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.p-min{
+    color: rgba(229, 62, 62, 1);
+}
+
+.p-max{
+    color: rgba(72, 187, 120, 1);
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .copy-right p{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #a0aec0;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .copy-right p a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #38b2ac;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .footer-menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-menu ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+footer .footer-menu ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #a0aec0;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .footer-menu ul li a:hover{
+    color: #88929f;
+}
+
+
+#figma #main .section1 .creditCard{
+    width: 100%;
+
+    background-color: rgb(27, 34, 47);
+    background-image: url(../img/Ellipse\ 30.png), url(../img/Ellipse\ 31.png), url(../img/Ellipse\ 32.png), url(../img/Ellipse\ 33.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#figma #main .section1 .creditCard .card-header{
+    display: flex;
+    position: relative;
+}
+
+#figma #main .section1 .creditCard .card-header img{
+    width: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#figma #main .section1 .creditCard .card-header h2{
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 700;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 50px;
+}
+
+#figma #main .section1 .creditCard .footer-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#figma #main .section1 .creditCard .footer-card .f-head p{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+}
+
+#figma #main .section1 .creditCard .footer-card .f-card{
+    padding-top: 10px;
+    display: flex;
+}
+
+.f-card1{
+    margin-right: 30px;
+}
+
+.f-card1 P{
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.f-card1 h3{
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.f-card2 P{
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.f-card2 h3{
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+
